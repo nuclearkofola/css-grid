@@ -23,3 +23,14 @@ body {
 	Obrázek *MUSÍ* mít nastavenou vlastnost width a height,
 	jinak object-fit nebude fungovat.
 */
+
+.obr {width: 400px;
+	height: 150px;	
+	object-fit:cover;
+}
+
+
+/*
+výška je nastavena rodičem
+cover - zobrazí se uprostřed
+contein - cela fotka se zmenší */

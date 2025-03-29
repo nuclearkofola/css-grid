@@ -18,3 +18,91 @@ body {
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+ display: grid;
+ grid-template-columns: 200px 1fr 250px;
+ grid-template-rows: 200px auto 1fr 100px;
+
+ grid-template-areas: 
+ "hlavicka hlavicka hlavicka"
+ "menu obsah reklama1"
+ "menu obsah reklama2"
+ "paticka paticka paticka";
+
+}
+
+
+.hlavicka {grid-area: hlavicka;}
+.menu {grid-area: menu;}
+.obsah {grid-area: obsah;}
+.reklama1 {grid-area: reklama1;}
+.reklama2 {grid-area: reklama2;}
+.paticka{grid-area: paticka;}
+
+
+/* Pro každý řádek pojmenujeme oblast
+nemusím řesit souřadnice ale řeknu oblasti
+oblasti musí být souvislé
+*/ 
+
+      /* jen toto měním */ 
+
+
+	  .kontejner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 200px auto auto auto 100px;
+		grid-template-areas: 
+		"hlavicka hlavicka"
+		"menu menu"
+		"obsah obsah"
+		"reklama1 reklama2"
+		"paticka paticka"; 
+	   }
+
+
+   @media (min-width: 1000px){
+	.kontejner {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		grid-template-rows: 200px auto 1fr 100px;
+		grid-template-areas: 
+		"hlavicka hlavicka hlavicka"
+		"menu obsah obsah"
+		"menu reklama1 reklama2"
+		"paticka paticka paticka"; 
+	   }
+	}
+
+@media (min-width: 700px){
+
+
+	.kontejner {
+		display: grid;
+		grid-template-columns: 200px 1fr 250px;
+		grid-template-rows: 200px auto 1fr 100px;
+	
+	
+	   
+		grid-template-areas: 
+		"hlavicka hlavicka hlavicka"
+		"menu obsah reklama1"
+		"menu obsah reklama2"
+		"paticka paticka paticka";
+	   
+	   }
+
+	}
+
+
+	
+    /* jen toto měním */ 
+   
+   .hlavicka {grid-area: hlavicka;}
+   .menu {grid-area: menu;}
+   .obsah {grid-area: obsah;}
+   .reklama1 {grid-area: reklama1;}
+   .reklama2 {grid-area: reklama2;}
+   .paticka{grid-area: paticka;}
+   /* responzivní verze */ 
+   
