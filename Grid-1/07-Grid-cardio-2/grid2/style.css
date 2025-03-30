@@ -21,3 +21,13 @@
 
 /* ---------------------------------------------------- */
 /* ZDE NAPIŠ VLASTNÍ CSS */
+.kontejner {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 100px;
+
+}
+.prvni  {order:0;}
+.druhy {order:2;}
+.treti {order:1;}
+.ctvrty {order:4;}
+

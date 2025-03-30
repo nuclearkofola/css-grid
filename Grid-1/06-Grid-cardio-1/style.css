@@ -66,3 +66,32 @@ html { box-sizing: border-box;}
 }
 
 
+
+
+
+.kontejner {
+	gap: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100px 1fr 1fr 1fr 250px 100px;
+	grid-template-areas: 
+	"logo hlavicka hlavicka"
+	"menu clanek1 clanek1"
+	"reklama1 clanek1 clanek1"
+	"clanek2 clanek2 reklama2"
+	"foto1 foto2 foto3"
+	"paticka paticka paticka"; 
+   }
+
+
+
+/* jen toto měním */ 
+.logo {grid-area: logo;}
+.hlavicka {grid-area: hlavicka;}
+.menu {grid-area: menu;}
+.clanek1 {grid-area: clanek1;}
+.clanek2 {grid-area: clanek2;}
+.reklama1 {grid-area: reklama1;}
+.reklama2 {grid-area: reklama2;}
+.paticka{grid-area: paticka;}
+/* responzivní verze */ 
