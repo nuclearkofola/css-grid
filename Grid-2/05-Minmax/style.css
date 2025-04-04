@@ -8,3 +8,40 @@ body {
 
 /* ---------------------------------------------------- */
 
+/* figure - obr s popiskem, figcaption - popisek k obrazku - semantická značka*/
+
+img {width: 100%;}
+
+figure { margin: 0;
+	background-color: white;
+	border-radius: 4px;
+	padding: 5px;
+	box-shadow: 3px 6px 10px #00000020;
+
+
+}
+
+figcaption {padding: 5px 0;
+text-align: center;}
+
+.galerie {display: grid;
+	gap: 20px;
+grid-template-columns: repeat(5, 1fr);
+
+}
+
+/* nastavení minimalní a max velikosti*/
+
+.galerie {
+	display: grid;
+	gap: 10px;
+grid-template-columns: repeat(5, minmax(200px, 350px));
+}
+
+figure:nth-child(7n+1) {transform: rotate(3deg);}
+figure:nth-child(7n+2) {transform: rotate(-1deg);}
+figure:nth-child(7n+3) {transform: rotate(2deg);}
+figure:nth-child(7n+4) {transform: rotate(-3deg);}
+figure:nth-child(7n+5) {transform: rotate(2deg);}
+figure:nth-child(7n+6) {transform: rotate(-1deg);}
+figure:nth-child(7n+7) {transform: rotate(2deg);}

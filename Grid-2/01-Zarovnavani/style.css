@@ -42,3 +42,48 @@ Vyzkoušíme si:
 	- dense (zabraňuje mezerám)
 - order
 */
+
+
+
+.kontejner {
+	display: grid;
+	grid-template-columns:   1fr 1fr 1fr;
+	grid-auto-rows: 150px 150px 150px;
+	/* grid-template-rows: 150px 150px 150px; */
+
+}
+
+.kontejner {
+	display: grid;
+	grid-template-columns:   repeat(3, 1fr);
+	grid-auto-rows: 150px;
+}
+
+
+/*
+pro grid je duležite nastavit řádky,
+jde převrátit - pak je potřeba vyrobit řádky.
+Druhou osu vždy přidáva.
+
+
+ repeat(3, 1fr);
+nebo nastavit 	grid-auto-rows: 150px;
+	grid-template-columns:   repeat(3, 1fr);
+
+*/
+.kontejner {
+	display: grid;
+	grid-template-columns:   repeat(3, 1fr);
+	grid-auto-rows: 150px;
+/* ZAROVNANÍ
+justify-items: enter, start, end, center, stretch; 	 jine nez flexbox - end, strech 
+	align-items: center, start, end, center, stretch; stejne flexbox */
+
+	place-items: end start;
+
+	/* nastavime jedno - nastaví dvě hodnoty nebo s mezerou end end - prvni venrtikalni 2 horizontalní - TŘEBA PRO ZAROVNANÍ LOGA*/
+
+	
+
+}
+

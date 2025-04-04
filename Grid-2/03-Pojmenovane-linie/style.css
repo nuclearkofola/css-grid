@@ -17,3 +17,20 @@ body {
 
 /* ---------------------------------------------------- */
 
+/* mužeme pojmenova linie (1 2 3 4 -1 - 2 -3 -4 
+
+*/
+
+.kontejner {
+	display: grid;
+	grid-template-columns: [page-start] 150px [main-start] 1fr [main-end] 150pm [page-end];
+
+	grid-template-rows: [page-start] 200px auto 100px [page-end];
+}
+
+.hlavicka {grid-column: page;
+}
+
+.paticka {
+	grid-column: page-start / page-end;
+}
